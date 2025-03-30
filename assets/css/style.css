@@ -24,20 +24,62 @@ header{
         }
         ul{
             display: flex;
-            gap: 20px;
             align-items: center;
             list-style: none;
             font-family: Exo;
             font-size: 16px;
             font-weight: 600;
+            text-decoration: none;
+            a:hover{
+                background-color: rgba(245, 245, 245, 1);
+                color: rgba(255, 120, 45, 1);
+                
+            }
             .home{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: rgba(255, 120, 45, 1);
                 background-color: rgba(245, 245, 245, 1);
+                color: rgba(255, 120, 45, 1);
                 width: 84px;
                 height: 72px;
+                text-decoration: none;
+            }
+            .courses{
+                width: 100px;
+                height: 72px;
+                text-decoration: none;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .blog{
+                width: 74px;
+                height: 72px;
+                text-decoration: none;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .page{
+                width:97px;
+                height: 72px;
+                text-decoration: none;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .premium{
+                width: 164px;
+                height: 72px;
+                text-decoration: none;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .d{
                 cursor: pointer;
@@ -106,6 +148,9 @@ header{
                 border: none;
                 border-radius: 24px;
                 cursor: pointer;
+            }
+            .button:hover{
+                background-color: rgba(255, 40, 45, 1);
             }
         }
     }
@@ -183,6 +228,9 @@ main{
                 font-weight:500 ;
                 cursor: pointer;
             }
+            .all-categories:hover{
+                background-color:rgba(157, 157, 157, 1) ;
+            }
         }
         .cards{
             display: flex;
@@ -216,7 +264,7 @@ main{
                     color: rgba(255, 120, 45, 1);
                 }
             }
-            .shadow{
+            card:hover{
                 box-shadow: 1px 1px 20px #0000001A ;
             }
         }
@@ -253,6 +301,9 @@ main{
                 font-weight:500 ;
                 cursor: pointer;
             }
+            .all-courses:hover{
+                background-color:rgba(157, 157, 157, 1) ;
+            }
         }
         .cardds{
             display: flex;
@@ -279,6 +330,7 @@ main{
                         font-family: Jost;
                     font-size: 16px;
                     font-weight: 500;
+                    display: none;
                     }
                 }
                 .money{
@@ -342,6 +394,24 @@ main{
                 }
                 
             }
+            cardd:hover{
+                box-shadow: 1px 1px 20px #0000001A ;
+                .Photography{
+                    width: 114px;
+                    height: 40px;
+                    border-radius: 8px;
+                    border: none;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    color: white;
+                    background-color: black;
+                    font-family: Jost;
+                font-size: 16px;
+                font-weight: 500;
+                display: block;
+                }
+            }
         }
         .alll{
             display: none;
@@ -387,6 +457,9 @@ main{
                 cursor: pointer;
                 margin-top: 20px;
             }
+            .Explorer:hover{
+                background-color: rgba(255, 40, 45, 1);
+            }
         }
     }
     #sec-4{
@@ -402,6 +475,10 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        }
+        .discrption:hover{
+            box-shadow: 5px 10px 20px #0000001A ;
+        }
             .orange{
                 font-family: Exo;
                 font-size: 600;
@@ -414,7 +491,6 @@ main{
                     font-size: 500;
                     font-size: 18px;
             }
-        }
     }
     #skill{
         padding: 0 70px 70px 70px;
@@ -462,10 +538,14 @@ main{
                 border-radius: 24px;
                 cursor: pointer;
             }
+            .Explorer-course:hover{
+            background-color: rgba(255, 40, 45, 1);
         }
-        .photo{
-            display: none;
-        }
+       
+    }
+    .photo{
+        display: none;
+    }
     }
     #Academy{
         height: 250px;
@@ -512,6 +592,9 @@ main{
                 border: 1px solid rgba(255, 120, 45, 1);
                 cursor: pointer;
             }
+            .Student:hover{
+                background-color:rgba(255, 200, 45, 1) ;
+            }
             .Instructor{
                 width:219px;
                 height: 48px;
@@ -523,6 +606,9 @@ main{
                 border: none;
                 border-radius: 24px;
                 cursor: pointer;
+            }
+            .Instructor:hover{
+                background-color:rgba(255, 40, 45, 1) ;
             }
         }
     }
@@ -560,15 +646,16 @@ main{
                     display: flex;
                 gap: 12px;
                 }
+                a{
+                    font-family: Jost;
+                    font-weight: 500;
+                    font-size: 18px;
+                    text-decoration: none;
+                    color:rgba(85, 85, 85, 1)
+                }
             }
             h3{
                 padding-bottom: 32px;
-            }
-            .op{
-                font-family: Jost;
-                font-weight: 400;
-                font-size: 18px;
-                color: rgba(85, 85, 85, 1);
             }
         }
         .PROGRAMS{
@@ -579,6 +666,13 @@ main{
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
+                a{
+                    font-family: Jost;
+                    font-weight: 500;
+                    font-size: 18px;
+                    text-decoration: none;
+                    color:rgba(85, 85, 85, 1)
+                }
             }
         }
         .GET-HELP{
@@ -590,28 +684,31 @@ main{
                 flex-direction: column;
                 gap: 20px;
             }
-        }
-        .fin{
-            font-family: Exo;
-            font-weight: 600;
-            font-size: 20px;
-        }
-        p{
-            font-family: Jost;
-            font-weight: 500;
-            font-size: 18px;
-            color: rgba(85, 85, 85, 1);
+            .fin{
+                font-family: Exo;
+                font-weight: 600;
+                font-size: 20px;
+            }
+            a{
+                font-family: Jost;
+                font-weight: 500;
+                font-size: 18px;
+                text-decoration: none;
+                color:rgba(85, 85, 85, 1)
+            }
         }
     }
     footer{
        text-align: center;
         background-color: rgba(245, 245, 245, 1);
-        p{
+        padding-bottom: 50px;
+        a{
             font-family: Jost;
             font-weight: 400;
             font-size: 18px;
             color: rgba(85, 85, 85, 1);
             padding: 50px 0;
+            text-decoration: none;
         }
     }
     @media screen and (min-width:0) and (max-width:992px){
@@ -768,5 +865,4 @@ main{
             }
         }
     }
-}   
-
+}
